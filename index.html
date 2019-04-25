@@ -1,0 +1,45 @@
+git config --local user.email 
+
+
+git config --local user.name e
+
+<?php
+use Aws\S3\S3Client;
+
+        if(isset($_FILES['image'])){
+                $file_name = $_FILES['image']['name'];
+                $temp_file_location = $_FILES['image']['tmp_name'];
+                $path = 'https://s3.amazonaws.com/pacifi/' . $file_name;
+                require __DIR__.'/vendor/autoload.php';
+                $path2 = $_FILES['image']['name'];
+                $ext = pathinfo($path, PATHINFO_EXTENSION);
+                $s3 = S3Client::factory(array(
+                         'profile' => 'default',
+                         'version' => 'latest',
+                         'region' => 'us-east-1',
+                         'key' => 'corta',
+                         'secret' => 'larga'
+));
+
+                $result = $s3->putObject([
+  			'Bucket' => 'pacifi',
+                        'Key'    => $file_name,
+                        'SourceFile' => $temp_file_location,
+                        'ContentType' => 'image/'.$ext,
+                        'ACL'    => 'public-read',
+                        'MetadataDirective' => 'REPLACE'
+                ]);
+                        $imagencargada = $path;
+                        echo $imagencargada;
+                        //var_dump($result);
+}
+?>
+
+<form action="<?= $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-da$
+        <input type="file" name="image" />
+        <input type="submit"/>
+
+<img src="<?php echo $imagencargada; ?>" />
+</form>
+
+
