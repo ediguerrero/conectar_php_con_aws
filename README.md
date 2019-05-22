@@ -17,6 +17,11 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 ```
 sudo php /usr/local/bin/composer require aws/aws-sdk-php
 ```
+
+si sale algun error de xml el siguiente comando lo soluciona
+```
+sudo yum install php-xml
+```
 y listo solo faltaria habilitar el servicio para que php conecte con el index
 
 ## instalar todas las dependencias para php
