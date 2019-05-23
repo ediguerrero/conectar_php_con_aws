@@ -17,6 +17,7 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 ```
 sudo php /usr/local/bin/composer require aws/aws-sdk-php
 ```
+este comando debe hacerse en la misma carpeta en la que esta el .php ya que se crea el composer.json que es quien tiene las dependencias.
 
 si sale algun error de xml el siguiente comando lo soluciona
 ```
