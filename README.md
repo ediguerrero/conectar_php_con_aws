@@ -1,5 +1,13 @@
 # conectar_php_con_aws
 ## Descripción
+
+## credenciales
+en este enlace muestran como sacar las credenciales en la parte de Administración de claves de acceso (Consola)
+```
+https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey
+```
+
+
 aun necesita habilitar el php en el servidor httpd ademas, estan los comandos para hacer del composer global
 
 
