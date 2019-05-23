@@ -8,7 +8,7 @@ https://docs.aws.amazon.com/es_es/IAM/latest/UserGuide/id_credentials_access-key
 ```
 
 
-aun necesita habilitar el php en el servidor httpd ademas, estan los comandos para hacer del composer global
+ estos son los comandos para hacer del composer global
 
 
 ## este es el comando
@@ -34,7 +34,7 @@ si sale algun error de xml el siguiente comando lo soluciona
 ```
 sudo yum install php-xml
 ```
-y listo solo faltaria habilitar el servicio para que php conecte con el index
+
 
 ## instalar todas las dependencias para php
 ### sudo yum install php php-mysql php-devel php-gd php-pecl-memcache php-pspell php-snmp php-xmlrpc php-xml
