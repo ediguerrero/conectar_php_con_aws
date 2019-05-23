@@ -19,6 +19,9 @@ sudo php /usr/local/bin/composer require aws/aws-sdk-php
 ```
 este comando debe hacerse en la misma carpeta en la que esta el .php ya que se crea el composer.json que es quien tiene las dependencias.
 
+### /var/www/html
+
+
 si sale algun error de xml el siguiente comando lo soluciona
 ```
 sudo yum install php-xml
